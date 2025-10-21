@@ -1,0 +1,175 @@
+/* --- Reset & Variabel Global --- */
+:root {
+    --primary-color: #333;
+    --secondary-color: #f4f4f4;
+    --accent-color: #007bff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Efek scroll halus saat klik navigasi */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--primary-color);
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* --- Navigasi --- */
+.navbar {
+    background: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid #ddd;
+    z-index: 10;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.nav-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* --- Bagian Halaman Utama (Hero) --- */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px; /* Jarak dari navbar */
+}
+
+.hero-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.hero-name {
+    font-size: 3rem;
+}
+
+.hero-status {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* --- Bagian Konten Umum --- */
+.content-section {
+    padding: 80px 0;
+}
+
+.bg-light {
+    background-color: var(--secondary-color);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+/* --- Bagian About --- */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* --- Bagian My Work --- */
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+    gap: 20px;
+}
+
+.work-item {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.work-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+/* --- Bagian Contact --- */
+.contact-info {
+    text-align: center;
+}
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+/* --- Footer --- */
+.footer {
+    text-align: center;
+    padding: 2rem 0;
+    background: var(--primary-color);
+    color: #fff;
+}
+
+/* --- Fungsionalitas Responsif (untuk HP) --- */
+@media (max-width: 768px) {
+    .hero-name {
+        font-size: 2.2rem;
+    }
+
+    .about-container {
+        flex-direction: column; /* Ubah layout jadi ke bawah */
+        text-align: center;
+    }
+
+    .work-grid {
+        grid-template-columns: 1fr; /* Hanya 1 kolom di HP */
+    }
+
+    .nav-links {
+        /* Nanti bisa ditambahkan JS untuk menu hamburger */
+        display: none; 
+    }
+}
