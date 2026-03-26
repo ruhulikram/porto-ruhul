@@ -1,86 +1,357 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruhul Ikram | Web Developer Portfolio</title>
+    <meta name="description"
+        content="Portfolio Ruhul Ikram — Web Developer yang passionate menciptakan pengalaman web yang menarik dan fungsional.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <header class="navbar">
+    <!-- ========== HEADER (Logo only) ========== -->
+    <header class="navbar" id="navbar">
         <div class="container">
-            <a href="#home" class="nav-logo">Ruhul Ikram love everything</a>
-            <nav class="nav-links">
-                <a href="#about">About</a>
-                <a href="#work">My Work</a>
-                <a href="#contact">Contact</a>
-            </nav>
+            <a href="#home" class="nav-logo" id="nav-logo">
+                <!-- TODO: Ganti dengan <img src="assets/logo.svg" alt="Logo"> -->
+                <span class="logo-text">ruhulikramggwp</span>
+            </a>
         </div>
     </header>
 
+    <!-- ========== HERO: DESK + FOLDER WITH SCATTERED FILES ========== -->
     <main>
-        <section id="home" class="hero">
-            <div class="container">
-                <img src="assets/photo-utama.jpg" alt="Foto Ruhul Ikram" class="hero-img">
-                <h1 class="hero-name">Ruhul Ikram</h1>
-                <p class="hero-status">Web Developer | Mahasiswa</p>
+        <section id="home" class="hero-desk">
+            <!-- Workspace decorative elements -->
+
+
+            <div class="desk-surface">
+                <!-- ====== CUSTOM ASSET FOLDER (7 layers) ====== -->
+                <div class="folder-asset" id="mainFolder">
+
+                    <!-- Layer 1: Folder Back -->
+                    <img src="assets/folder/folder-back.png" alt="" class="layer folder-back-img" draggable="false">
+
+                    <!-- Layer 2-5: Files (positioned inside folder, peeking out top) -->
+                    <div class="folder-files-layer">
+                        <!-- File: Empty (no interaction, decorative) -->
+                        <div class="asset-file file-empty">
+                            <!-- TODO: Taruh file kosong di assets/folder/file-empty.png -->
+                            <img src="assets/folder/file-empty.png" alt="" draggable="false">
+                        </div>
+
+                        <!-- File: Work (interactive) -->
+                        <div class="asset-file file-interactive file-work" data-section="work" tabindex="0">
+                            <!-- TODO: Taruh asset file work di assets/folder/file-work.png -->
+                            <img src="assets/folder/file-work.png" alt="Work" draggable="false">
+                            <div class="file-bubble">
+                                <div class="bubble-inner">
+                                    <span class="bubble-emoji">💼</span>
+                                    <span class="bubble-title">Work</span>
+                                    <span class="bubble-desc">Experience & Skills</span>
+                                </div>
+                                <div class="bubble-arrow"></div>
+                            </div>
+                        </div>
+
+                        <!-- File: Studies (interactive) -->
+                        <div class="asset-file file-interactive file-studies" data-section="studies" tabindex="0">
+                            <!-- TODO: Taruh asset file studies di assets/folder/file-studies.png -->
+                            <img src="assets/folder/file-studies.png" alt="Studies" draggable="false">
+                            <div class="file-bubble">
+                                <div class="bubble-inner">
+                                    <span class="bubble-emoji">🎓</span>
+                                    <span class="bubble-title">Studies</span>
+                                    <span class="bubble-desc">Education & Learning</span>
+                                </div>
+                                <div class="bubble-arrow"></div>
+                            </div>
+                        </div>
+
+                        <!-- File: Project (interactive, frontmost) -->
+                        <div class="asset-file file-interactive file-project" data-section="project" tabindex="0">
+                            <!-- TODO: Taruh asset file project di assets/folder/file-project.png -->
+                            <img src="assets/folder/file-project.png" alt="Project" draggable="false">
+                            <div class="file-bubble">
+                                <div class="bubble-inner">
+                                    <span class="bubble-emoji">🎨</span>
+                                    <span class="bubble-title">Project</span>
+                                    <span class="bubble-desc">Selected Works</span>
+                                </div>
+                                <div class="bubble-arrow"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Layer 6: Folder Front -->
+                    <img src="assets/folder/folder-front.png" alt="" class="layer folder-front-img" draggable="false">
+
+                    <!-- Layer 7: Stamp (photo badge on folder front) -->
+                    <div class="stamp-layer">
+                        <!-- TODO: Taruh stamp di assets/folder/stamp.png -->
+                        <img src="assets/folder/stamp.png" alt="Ruhul Ikram" class="stamp-img" draggable="false">
+                    </div>
+                </div>
+
+                <!-- 3D iOS Chat Bubble — Contact -->
+                <div class="chat-bubble-3d" data-section="contact" id="chatBubble" tabindex="0">
+                    <div class="bubble-body">
+                        <div class="bubble-avatar">💬</div>
+                        <div class="bubble-content">
+                            <span class="bubble-sender">Contact me</span>
+                            <span class="bubble-text">Let's work together! →</span>
+                        </div>
+                    </div>
+                    <div class="bubble-tail"></div>
+                </div>
+            </div>
+
+            <!-- Scroll indicator -->
+            <div class="scroll-indicator" id="scrollIndicator">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
             </div>
         </section>
 
-        <section id="about" class="content-section">
-            <div class="container about-container">
-                <!-- <img src="assets/ruhul-ikram-about.jpg" alt="Foto Ruhul Ikram di halaman About" class="about-img"> -->
-                <div class="about-text">
-                    <h2>Tentang Saya</h2>
-                    <p>
-                        Perkenalkan, saya Ruhul Ikram. Seorang pengembang web yang bersemangat dalam menciptakan aplikasi web yang fungsional dan menarik. 
-                        Saat ini saya sedang mendalami teknologi front-end seperti ReactJS dan selalu antusias untuk belajar hal baru.
-                    </p>
+        <!-- ========== PROJECT SECTION ========== -->
+        <section id="project" class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" />
+                            <line x1="12" y1="17" x2="12" y2="21" />
+                        </svg>
+                    </div>
+                    <h2>Selected <em>Projects</em></h2>
+                    <p class="section-sub">Beberapa karya yang telah saya kerjakan</p>
+                </div>
+                <div class="project-grid">
+                    <!-- TODO: Ganti dengan project kamu -->
+                    <article class="project-card" id="project-1">
+                        <div class="card-preview">
+                            <img src="assets/photo-utama.jpg" alt="Project 1">
+                            <div class="card-overlay">
+                                <span class="overlay-btn">Lihat Detail →</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-tools">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6" />
+                                    <polyline points="8 6 2 12 8 18" />
+                                </svg>
+                            </div>
+                            <h3>Nama Project 1</h3>
+                            <p>Deskripsi singkat tentang project ini dan teknologi yang digunakan.</p>
+                            <div class="card-tags">
+                                <span>HTML</span><span>CSS</span><span>JS</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card" id="project-2">
+                        <div class="card-preview">
+                            <img src="assets/photo-utama.jpg" alt="Project 2">
+                            <div class="card-overlay">
+                                <span class="overlay-btn">Lihat Detail →</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-tools">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6" />
+                                    <polyline points="8 6 2 12 8 18" />
+                                </svg>
+                            </div>
+                            <h3>Nama Project 2</h3>
+                            <p>Deskripsi singkat tentang project kedua.</p>
+                            <div class="card-tags">
+                                <span>React</span><span>Node.js</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card" id="project-3">
+                        <div class="card-preview">
+                            <img src="assets/photo-utama.jpg" alt="Project 3">
+                            <div class="card-overlay">
+                                <span class="overlay-btn">Lihat Detail →</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-tools">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6" />
+                                    <polyline points="8 6 2 12 8 18" />
+                                </svg>
+                            </div>
+                            <h3>Nama Project 3</h3>
+                            <p>Deskripsi singkat tentang project ketiga.</p>
+                            <div class="card-tags">
+                                <span>Figma</span><span>CSS</span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="work" class="content-section bg-light">
+        <!-- ========== WORK EXPERIENCE SECTION ========== -->
+        <section id="work" class="content-section section-dark">
             <div class="container">
-                <h2>My Work</h2>
-                <div class="work-grid">
-                    <div class="work-item">
-                        <img src="assets/project-1.png" alt="Gambar Project 1">
-                        <h3>Nama Project 1</h3>
-                        <p>Deskripsi singkat tentang project ini, teknologi yang digunakan, dan apa tujuannya.</p>
+                <div class="section-header light">
+                    <div class="section-icon">
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="2" y="7" width="20" height="14" rx="2" />
+                            <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                        </svg>
                     </div>
-                    <div class="work-item">
-                        <img src="assets/project-2.png" alt="Gambar Project 2">
-                        <h3>Nama Project 2</h3>
-                        <p>Ini adalah tugas kuliah mata pelajaran X yang berfokus pada desain antarmuka pengguna.</p>
+                    <h2>Work <em>Experience</em></h2>
+                    <p class="section-sub">Pengalaman kerja & skill yang dimiliki</p>
+                </div>
+                <div class="work-cards">
+                    <!-- TODO: Ganti dengan pengalaman kerja kamu -->
+                    <div class="work-card">
+                        <div class="work-card-header">
+                            <div class="work-badge">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                            </div>
+                            <span class="work-period">2024 — Sekarang</span>
+                        </div>
+                        <h3>Web Developer</h3>
+                        <p class="work-company">Nama Perusahaan / Freelance</p>
+                        <p class="work-desc">Deskripsi singkat tentang peran dan tanggung jawab kamu di posisi ini.</p>
+                        <div class="work-skills">
+                            <span>HTML/CSS</span><span>JavaScript</span><span>React</span>
+                        </div>
                     </div>
-                    <div class="work-item">
-                        <img src="assets/project-3.png" alt="Gambar Project 3">
-                        <h3>Nama Project 3</h3>
-                        <p>Project pribadi untuk latihan membuat website responsif menggunakan HTML & CSS Flexbox.</p>
+                    <div class="work-card">
+                        <div class="work-card-header">
+                            <div class="work-badge">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                            </div>
+                            <span class="work-period">2023 — 2024</span>
+                        </div>
+                        <h3>Frontend Intern</h3>
+                        <p class="work-company">Nama Perusahaan Lain</p>
+                        <p class="work-desc">Deskripsi singkat tentang apa yang dipelajari dan dikerjakan.</p>
+                        <div class="work-skills">
+                            <span>Vue.js</span><span>Git</span><span>Figma</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="content-section">
+        <!-- ========== STUDIES SECTION ========== -->
+        <section id="studies" class="content-section">
             <div class="container">
-                <h2>Hubungi Saya</h2>
-                <p>Anda bisa menghubungi saya melalui beberapa cara berikut:</p>
-                <div class="contact-info">
-                    <p><strong>Email:</strong> ikramruhul@gmail.com</p>
-                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ruhul-ikram/" target="_blank" >linkedin.com/in/ruhulikram</a></p>
-                    <p><strong>GitHub:</strong> <a href="https://github.com/ruhulikram" target="_blank">github.com/ruhulikram</a></p>
+                <div class="section-header">
+                    <div class="section-icon">
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                        </svg>
+                    </div>
+                    <h2>Education <em>& Studies</em></h2>
+                    <p class="section-sub">Riwayat pendidikan formal & non-formal</p>
+                </div>
+                <div class="studies-grid">
+                    <!-- TODO: Ganti dengan riwayat pendidikan kamu -->
+                    <div class="study-card">
+                        <div class="study-year">2022 — Sekarang</div>
+                        <div class="study-body">
+                            <div class="study-icon">🎓</div>
+                            <h3>Nama Universitas</h3>
+                            <p class="study-major">Teknik Informatika / Sistem Informasi</p>
+                            <p class="study-desc">Deskripsi singkat tentang fokus studi, mata kuliah favorit, atau
+                                prestasi.</p>
+                        </div>
+                    </div>
+                    <div class="study-card">
+                        <div class="study-year">2019 — 2022</div>
+                        <div class="study-body">
+                            <div class="study-icon">🏫</div>
+                            <h3>Nama SMA/SMK</h3>
+                            <p class="study-major">Jurusan / Program Keahlian</p>
+                            <p class="study-desc">Deskripsi singkat tentang pendidikan dan skill awal.</p>
+                        </div>
+                    </div>
+                    <div class="study-card online">
+                        <div class="study-year">2023 — Ongoing</div>
+                        <div class="study-body">
+                            <div class="study-icon">💻</div>
+                            <h3>Self-Learning & Courses</h3>
+                            <p class="study-major">Online Courses & Bootcamp</p>
+                            <p class="study-desc">Kursus online, bootcamp, atau sertifikasi yang telah diselesaikan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CONTACT SECTION ========== -->
+        <section id="contact" class="content-section section-contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-left">
+                        <h2>Let's <em>Connect</em></h2>
+                        <p>Tertarik bekerja sama atau ingin berdiskusi? Jangan ragu untuk menghubungi saya.</p>
+                    </div>
+                    <div class="contact-right">
+                        <a href="mailto:ikramruhul@gmail.com" class="contact-pill-link">
+                            <span class="pill-emoji">📧</span>
+                            <span>ikramruhul@gmail.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ruhul-ikram/" target="_blank" class="contact-pill-link">
+                            <span class="pill-emoji">💼</span>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/ruhulikram" target="_blank" class="contact-pill-link">
+                            <span class="pill-emoji">🐙</span>
+                            <span>GitHub</span>
+                        </a>
+                        <!-- TODO: Tambah sosmed lain -->
+                        <a href="#" target="_blank" class="contact-pill-link">
+                            <span class="pill-emoji">📸</span>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    
+
+    <!-- ========== FOOTER ========== -->
     <footer class="footer">
-        <p>&copy; 2025 Ruhul Ikram. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 Ruhul Ikram. Built with ❤️</p>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
