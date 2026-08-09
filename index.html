@@ -1,357 +1,997 @@
-<!DOCTYPE html>
-<html lang="id">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruhul Ikram | Web Developer Portfolio</title>
-    <meta name="description"
-        content="Portfolio Ruhul Ikram — Web Developer yang passionate menciptakan pengalaman web yang menarik dan fungsional.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ruhul Ikram | Designer and Frontend Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Ruhul Ikram, a designer, frontend developer, and content specialist based in Bogor, Indonesia."
+    />
+    <meta name="theme-color" content="#f3efe5" />
+    <meta
+      property="og:title"
+      content="Ruhul Ikram | Designer and Frontend Developer"
+    />
+    <meta
+      property="og:description"
+      content="Stories with shape, interfaces with purpose, and content built to connect."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://ruhulikram.github.io/porto-ruhul/"
+    />
+    <meta
+      property="og:image"
+      content="https://ruhulikram.github.io/porto-ruhul/assets/images/projects/photo-utama-og.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://ruhulikram.github.io/porto-ruhul/" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=Outfit:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+      rel="preload"
+      href="assets/fonts/geist-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="icon"
+      type="image/webp"
+      href="assets/images/folder-ui/stamp.webp"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="site-noise" aria-hidden="true"></div>
 
-    <!-- ========== HEADER (Logo only) ========== -->
-    <header class="navbar" id="navbar">
-        <div class="container">
-            <a href="#home" class="nav-logo" id="nav-logo">
-                <!-- TODO: Ganti dengan <img src="assets/logo.svg" alt="Logo"> -->
-                <span class="logo-text">ruhulikramggwp</span>
-            </a>
-        </div>
+    <header class="site-header snote-menu" id="siteHeader">
+      <nav class="snote-stack" aria-label="Primary navigation">
+        <a
+          class="snote-link snote-link--identity nav-link"
+          href="#home"
+          aria-current="true"
+        >
+          <img
+            src="assets/images/snote/snote-1.webp"
+            alt=""
+            aria-hidden="true"
+            width="488"
+            height="172"
+          />
+          <span class="snote-label">Ruhul Ikram</span>
+        </a>
+        <a class="snote-link snote-link--journey nav-link" href="#journey">
+          <img
+            src="assets/images/snote/snote-2.webp"
+            alt=""
+            aria-hidden="true"
+            width="544"
+            height="147"
+          />
+          <span class="snote-label">Journey</span>
+        </a>
+        <a class="snote-link snote-link--work nav-link" href="#projects">
+          <img
+            src="assets/images/snote/snote-3.webp"
+            alt=""
+            aria-hidden="true"
+            width="600"
+            height="125"
+          />
+          <span class="snote-label">Work</span>
+        </a>
+        <a class="snote-link snote-link--contact nav-link" href="#contact">
+          <img
+            src="assets/images/snote/snote-4.webp"
+            alt=""
+            aria-hidden="true"
+            width="599"
+            height="128"
+          />
+          <span class="snote-label">Let's Connect</span>
+        </a>
+      </nav>
     </header>
 
-    <!-- ========== HERO: DESK + FOLDER WITH SCATTERED FILES ========== -->
-    <main>
-        <section id="home" class="hero-desk">
-            <!-- Workspace decorative elements -->
+    <main id="main-content" class="site-main">
+      <section class="hero" id="home" aria-label="Interactive portfolio desk">
+        <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
 
+        <div class="folder-stage" id="folderStage">
+          <div class="stage-bar">
+            <div class="stage-identity">
+              <span class="stage-app-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M3.5 7.5h6l2-2h9a1 1 0 0 1 1 1v11a2 2 0 0 1-2 2h-15a2 2 0 0 1-2-2v-9a1 1 0 0 1 1-1Z"
+                  />
+                </svg>
+              </span>
+              <span>
+                <strong>Ruhul's desk</strong>
+                <small>Choose a file</small>
+              </span>
+            </div>
+            <div class="stage-tools" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
 
-            <div class="desk-surface">
-                <!-- ====== CUSTOM ASSET FOLDER (7 layers) ====== -->
-                <div class="folder-asset" id="mainFolder">
+          <div class="folder-canvas">
+            <div class="folder-asset" id="mainFolder">
+              <img
+                src="assets/images/folder-ui/folder-back.webp"
+                alt=""
+                class="folder-layer folder-back-img"
+                draggable="false"
+                width="855"
+                height="596"
+              />
 
-                    <!-- Layer 1: Folder Back -->
-                    <img src="assets/folder/folder-back.png" alt="" class="layer folder-back-img" draggable="false">
-
-                    <!-- Layer 2-5: Files (positioned inside folder, peeking out top) -->
-                    <div class="folder-files-layer">
-                        <!-- File: Empty (no interaction, decorative) -->
-                        <div class="asset-file file-empty">
-                            <!-- TODO: Taruh file kosong di assets/folder/file-empty.png -->
-                            <img src="assets/folder/file-empty.png" alt="" draggable="false">
-                        </div>
-
-                        <!-- File: Work (interactive) -->
-                        <div class="asset-file file-interactive file-work" data-section="work" tabindex="0">
-                            <!-- TODO: Taruh asset file work di assets/folder/file-work.png -->
-                            <img src="assets/folder/file-work.png" alt="Work" draggable="false">
-                            <div class="file-bubble">
-                                <div class="bubble-inner">
-                                    <span class="bubble-emoji">💼</span>
-                                    <span class="bubble-title">Work</span>
-                                    <span class="bubble-desc">Experience & Skills</span>
-                                </div>
-                                <div class="bubble-arrow"></div>
-                            </div>
-                        </div>
-
-                        <!-- File: Studies (interactive) -->
-                        <div class="asset-file file-interactive file-studies" data-section="studies" tabindex="0">
-                            <!-- TODO: Taruh asset file studies di assets/folder/file-studies.png -->
-                            <img src="assets/folder/file-studies.png" alt="Studies" draggable="false">
-                            <div class="file-bubble">
-                                <div class="bubble-inner">
-                                    <span class="bubble-emoji">🎓</span>
-                                    <span class="bubble-title">Studies</span>
-                                    <span class="bubble-desc">Education & Learning</span>
-                                </div>
-                                <div class="bubble-arrow"></div>
-                            </div>
-                        </div>
-
-                        <!-- File: Project (interactive, frontmost) -->
-                        <div class="asset-file file-interactive file-project" data-section="project" tabindex="0">
-                            <!-- TODO: Taruh asset file project di assets/folder/file-project.png -->
-                            <img src="assets/folder/file-project.png" alt="Project" draggable="false">
-                            <div class="file-bubble">
-                                <div class="bubble-inner">
-                                    <span class="bubble-emoji">🎨</span>
-                                    <span class="bubble-title">Project</span>
-                                    <span class="bubble-desc">Selected Works</span>
-                                </div>
-                                <div class="bubble-arrow"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Layer 6: Folder Front -->
-                    <img src="assets/folder/folder-front.png" alt="" class="layer folder-front-img" draggable="false">
-
-                    <!-- Layer 7: Stamp (photo badge on folder front) -->
-                    <div class="stamp-layer">
-                        <!-- TODO: Taruh stamp di assets/folder/stamp.png -->
-                        <img src="assets/folder/stamp.png" alt="Ruhul Ikram" class="stamp-img" draggable="false">
-                    </div>
+              <div class="folder-files-layer">
+                <div class="asset-file file-empty" aria-hidden="true">
+                  <img
+                    src="assets/images/folder-ui/file-empty.webp"
+                    alt=""
+                    draggable="false"
+                    width="531"
+                    height="574"
+                  />
                 </div>
 
-                <!-- 3D iOS Chat Bubble — Contact -->
-                <div class="chat-bubble-3d" data-section="contact" id="chatBubble" tabindex="0">
-                    <div class="bubble-body">
-                        <div class="bubble-avatar">💬</div>
-                        <div class="bubble-content">
-                            <span class="bubble-sender">Contact me</span>
-                            <span class="bubble-text">Let's work together! →</span>
-                        </div>
+                <a
+                  class="asset-file file-interactive file-work"
+                  href="#journey"
+                  data-file="work"
+                >
+                  <img
+                    src="assets/images/folder-ui/file-work.webp"
+                    alt=""
+                    draggable="false"
+                    width="736"
+                    height="399"
+                  />
+                  <span class="sr-only">Open work experience</span>
+                  <span class="file-bubble" aria-hidden="true">
+                    <span class="file-bubble-icon">
+                      <svg viewBox="0 0 24 24">
+                        <path
+                          d="M8 7V5.5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2V7M4 7.5h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2Zm-2 5h20"
+                        />
+                      </svg>
+                    </span>
+                    <strong>Work</strong>
+                    <small>Roles and skills</small>
+                  </span>
+                </a>
+
+                <a
+                  class="asset-file file-interactive file-studies"
+                  href="#studies"
+                  data-file="studies"
+                >
+                  <img
+                    src="assets/images/folder-ui/file-studies.webp"
+                    alt=""
+                    draggable="false"
+                    width="410"
+                    height="476"
+                  />
+                  <span class="sr-only">Open education and certifications</span>
+                  <span class="file-bubble" aria-hidden="true">
+                    <span class="file-bubble-icon">
+                      <svg viewBox="0 0 24 24">
+                        <path
+                          d="m2.5 9 9.5-5 9.5 5-9.5 5-9.5-5Zm3 2.2v5.3c3.7 2.7 9.3 2.7 13 0v-5.3M21.5 9v7"
+                        />
+                      </svg>
+                    </span>
+                    <strong>Studies</strong>
+                    <small>Learning archive</small>
+                  </span>
+                </a>
+
+                <a
+                  class="asset-file file-interactive file-project"
+                  href="#projects"
+                  data-file="projects"
+                >
+                  <img
+                    src="assets/images/folder-ui/file-project.webp"
+                    alt=""
+                    draggable="false"
+                    width="410"
+                    height="476"
+                  />
+                  <span class="sr-only">Open selected projects</span>
+                  <span class="file-bubble" aria-hidden="true">
+                    <span class="file-bubble-icon">
+                      <svg viewBox="0 0 24 24">
+                        <rect x="3" y="3" width="18" height="18" rx="4" />
+                        <path d="m7 16 3-3 2.5 2.5L16 12l3 3M15.5 8.5h.01" />
+                      </svg>
+                    </span>
+                    <strong>Projects</strong>
+                    <small>Selected case files</small>
+                  </span>
+                </a>
+              </div>
+
+              <img
+                src="assets/images/folder-ui/folder-front.webp"
+                alt=""
+                class="folder-layer folder-front-img"
+                draggable="false"
+                width="892"
+                height="626"
+              />
+              <div class="stamp-layer">
+                <img
+                  src="assets/images/folder-ui/stamp.webp"
+                  alt="Portrait of Ruhul Ikram"
+                  class="stamp-img"
+                  draggable="false"
+                  width="262"
+                  height="299"
+                />
+              </div>
+              <div class="hero-profile">
+                <h1>Ruhul Ikram</h1>
+                <p class="hero-profile__label">About me</p>
+                <p class="hero-profile__bio">
+                  Based in Bogor, I blend design, code, and storytelling into
+                  clear digital experiences.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="paper-butterfly paper-butterfly--primary"
+          data-butterfly
+          data-flight="primary"
+          aria-hidden="true"
+        >
+          <span class="paper-butterfly__shadow"></span>
+          <span class="paper-butterfly__form">
+            <img
+              class="paper-butterfly__wing paper-butterfly__wing--left"
+              src="assets/images/butterfly/butterfly-wings-left.webp"
+              alt=""
+              draggable="false"
+              width="1162"
+              height="1232"
+            />
+            <img
+              class="paper-butterfly__wing paper-butterfly__wing--right"
+              src="assets/images/butterfly/butterfly-wings-right.webp"
+              alt=""
+              draggable="false"
+              width="1162"
+              height="1232"
+            />
+            <img
+              class="paper-butterfly__body"
+              src="assets/images/butterfly/butterfly-1.webp"
+              alt=""
+              draggable="false"
+              width="450"
+              height="820"
+            />
+          </span>
+        </div>
+
+        <div
+          class="paper-butterfly paper-butterfly--drift"
+          data-butterfly
+          data-flight="drift"
+          aria-hidden="true"
+        >
+          <span class="paper-butterfly__shadow"></span>
+          <span class="paper-butterfly__form">
+            <img
+              class="paper-butterfly__wing paper-butterfly__wing--left"
+              src="assets/images/butterfly/butterfly-wings-left.webp"
+              alt=""
+              draggable="false"
+              width="1162"
+              height="1232"
+            />
+            <img
+              class="paper-butterfly__wing paper-butterfly__wing--right"
+              src="assets/images/butterfly/butterfly-wings-right.webp"
+              alt=""
+              draggable="false"
+              width="1162"
+              height="1232"
+            />
+            <img
+              class="paper-butterfly__body"
+              src="assets/images/butterfly/butterfly-1.webp"
+              alt=""
+              draggable="false"
+              width="450"
+              height="820"
+            />
+          </span>
+        </div>
+
+        <div
+          class="paper-butterfly paper-butterfly--dart"
+          data-butterfly
+          data-flight="dart"
+          aria-hidden="true"
+        >
+          <span class="paper-butterfly__shadow"></span>
+          <span class="paper-butterfly__form">
+            <img
+              class="paper-butterfly__wing paper-butterfly__wing--left"
+              src="assets/images/butterfly/butterfly-wings-left.webp"
+              alt=""
+              draggable="false"
+              width="1162"
+              height="1232"
+            />
+            <img
+              class="paper-butterfly__wing paper-butterfly__wing--right"
+              src="assets/images/butterfly/butterfly-wings-right.webp"
+              alt=""
+              draggable="false"
+              width="1162"
+              height="1232"
+            />
+            <img
+              class="paper-butterfly__body"
+              src="assets/images/butterfly/butterfly-1.webp"
+              alt=""
+              draggable="false"
+              width="450"
+              height="820"
+            />
+          </span>
+        </div>
+
+        <div
+          class="paper-butterfly paper-butterfly--table"
+          data-butterfly
+          data-flight="table"
+          aria-hidden="true"
+        >
+          <span class="paper-butterfly__shadow"></span>
+          <span class="paper-butterfly__form">
+            <img
+              class="paper-butterfly__wing paper-butterfly__wing--left"
+              src="assets/images/butterfly/butterfly-wings-left.webp"
+              alt=""
+              draggable="false"
+              width="1162"
+              height="1232"
+            />
+            <img
+              class="paper-butterfly__wing paper-butterfly__wing--right"
+              src="assets/images/butterfly/butterfly-wings-right.webp"
+              alt=""
+              draggable="false"
+              width="1162"
+              height="1232"
+            />
+            <img
+              class="paper-butterfly__body"
+              src="assets/images/butterfly/butterfly-1.webp"
+              alt=""
+              draggable="false"
+              width="450"
+              height="820"
+            />
+          </span>
+        </div>
+      </section>
+
+      <section
+        class="capabilities-section chapter"
+        id="capabilities"
+        aria-labelledby="capabilities-title"
+      >
+        <div class="wide-container">
+          <div class="chapter-heading chapter-heading-split">
+            <h2 id="capabilities-title">
+              One desk.<br />Three ways of thinking.
+            </h2>
+            <p>
+              I switch between visual, technical, and editorial thinking without
+              losing the thread between them. Open a folder to see what that
+              means in practice.
+            </p>
+          </div>
+
+          <div class="capability-accordion" data-accordion>
+            <article class="capability-panel panel-design is-active">
+              <button
+                class="capability-toggle"
+                type="button"
+                aria-expanded="true"
+                aria-controls="capability-design"
+              >
+                <span class="capability-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="m4 16 8-12 8 12-8 4-8-4Zm8-12v16M4 16h16" />
+                  </svg>
+                </span>
+                <span class="capability-name">Design</span>
+                <span class="capability-plus" aria-hidden="true"></span>
+              </button>
+              <div class="capability-content" id="capability-design">
+                <p>
+                  Visual systems that feel specific to the story, not borrowed
+                  from a component gallery.
+                </p>
+                <ul>
+                  <li>Interface direction</li>
+                  <li>Responsive layouts</li>
+                  <li>Social graphics</li>
+                  <li>Illustration</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="capability-panel panel-build">
+              <button
+                class="capability-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="capability-build"
+              >
+                <span class="capability-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="m8 6-6 6 6 6M16 6l6 6-6 6M14 3l-4 18" />
+                  </svg>
+                </span>
+                <span class="capability-name">Develop</span>
+                <span class="capability-plus" aria-hidden="true"></span>
+              </button>
+              <div class="capability-content" id="capability-build">
+                <p>
+                  Frontend work that protects the visual idea while staying
+                  semantic, fast, and usable.
+                </p>
+                <ul>
+                  <li>HTML, CSS, JavaScript</li>
+                  <li>Responsive development</li>
+                  <li>Interaction and motion</li>
+                  <li>Program analysis</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="capability-panel panel-content">
+              <button
+                class="capability-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="capability-content"
+              >
+                <span class="capability-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M4 4h16v16H4zM8 8h8M8 12h8M8 16h5" />
+                  </svg>
+                </span>
+                <span class="capability-name">Communicate</span>
+                <span class="capability-plus" aria-hidden="true"></span>
+              </button>
+              <div class="capability-content" id="capability-content">
+                <p>
+                  Content systems that give teams a repeatable rhythm without
+                  flattening their voice.
+                </p>
+                <ul>
+                  <li>Content strategy</li>
+                  <li>Editorial planning</li>
+                  <li>Social media</li>
+                  <li>Teaching and facilitation</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="journey-section chapter"
+        id="journey"
+        aria-labelledby="journey-title"
+      >
+        <div class="wide-container journey-grid">
+          <div class="journey-intro" id="journeyIntro">
+            <h2 id="journey-title">Screens, classrooms, and stories.</h2>
+            <p>
+              My path is not a straight developer timeline. Teaching sharpened
+              how I explain. Editorial work sharpened how I frame. Technology
+              study gives those ideas structure.
+            </p>
+            <a
+              href="mailto:ikramruhul@gmail.com?subject=Ruhul%20Ikram%20resume%20request"
+              class="text-link"
+            >
+              Request my full resume
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M7 17 17 7M8 7h9v9" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="journey-stack" id="journeyStack">
+            <article
+              class="timeline-card timeline-current"
+              style="--stack-index: 0"
+            >
+              <div class="timeline-topline">
+                <span class="timeline-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M8 7V5.5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2V7M4 7.5h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2Z"
+                    />
+                  </svg>
+                </span>
+                <time datetime="2026-03">March 2026 - present</time>
+              </div>
+              <div class="timeline-copy">
+                <p class="timeline-company">Sekolah Prestasi Global, Depok</p>
+                <h3>Social Media Manager</h3>
+                <p>
+                  Building content strategy and managing social communication to
+                  strengthen the school's brand with a clearer, more consistent
+                  publishing rhythm.
+                </p>
+              </div>
+              <ul class="timeline-skills" aria-label="Skills">
+                <li>Social media</li>
+                <li>Content strategy</li>
+                <li>Visual design</li>
+              </ul>
+            </article>
+
+            <article
+              class="timeline-card timeline-editorial"
+              style="--stack-index: 1"
+            >
+              <div class="timeline-topline">
+                <span class="timeline-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M4 4h16v16H4zM8 8h8M8 12h8M8 16h5" />
+                  </svg>
+                </span>
+                <time datetime="2023-09">September 2023 - January 2026</time>
+              </div>
+              <div class="timeline-copy">
+                <p class="timeline-company">MileniaNews, South Jakarta</p>
+                <h3>Content Editor</h3>
+                <p>
+                  Edited news content and expanded into social media design,
+                  content planning, and a short role hosting a horror-story
+                  podcast.
+                </p>
+              </div>
+              <ul class="timeline-skills" aria-label="Skills">
+                <li>Editing</li>
+                <li>Graphic design</li>
+                <li>Podcast hosting</li>
+              </ul>
+            </article>
+
+            <article
+              class="timeline-card timeline-teaching"
+              style="--stack-index: 2"
+            >
+              <div class="timeline-topline">
+                <span class="timeline-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="m2.5 9 9.5-5 9.5 5-9.5 5-9.5-5Zm3 2.2v5.3c3.7 2.7 9.3 2.7 13 0v-5.3"
+                    />
+                  </svg>
+                </span>
+                <time datetime="2023-07">July 2023 - September 2023</time>
+              </div>
+              <div class="timeline-copy">
+                <p class="timeline-company">SMK YASTRIF 2</p>
+                <h3>High School Teacher</h3>
+                <p>
+                  Taught digital simulation and automotive technical drawing,
+                  prepared lesson plans, and evaluated student progress.
+                </p>
+              </div>
+              <ul class="timeline-skills" aria-label="Skills">
+                <li>Teaching</li>
+                <li>Digital simulation</li>
+                <li>Lesson planning</li>
+              </ul>
+            </article>
+
+            <article
+              class="timeline-card timeline-studies"
+              id="studies"
+              style="--stack-index: 3"
+            >
+              <div class="timeline-topline">
+                <span class="timeline-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M4 3.5h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H4v-14Zm16 0h-2a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h3v-14Z"
+                    />
+                  </svg>
+                </span>
+                <time datetime="2022-09">September 2022 - July 2026</time>
+              </div>
+              <div class="timeline-copy">
+                <p class="timeline-company">
+                  Universitas Bina Sarana Informatika
+                </p>
+                <h3>Bachelor of Information Technology</h3>
+                <p>
+                  Focused on software development, program analysis, and web
+                  development, supported by practical networking and programming
+                  credentials.
+                </p>
+              </div>
+              <ul class="credential-list" aria-label="Certifications">
+                <li><strong>MTCNA</strong><span>MikroTik networking</span></li>
+                <li><strong>PCAP</strong><span>Python essentials</span></li>
+                <li><strong>Competence</strong><span>Program analyst</span></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="projects-section chapter"
+        id="projects"
+        aria-labelledby="projects-title"
+      >
+        <div class="wide-container">
+          <div class="chapter-heading">
+            <h2 id="projects-title">A few folders from my desk.</h2>
+            <p>
+              Selected work and practice across web, editorial content, social
+              design, and illustration. Each case file starts with context
+              instead of decoration.
+            </p>
+          </div>
+
+          <div
+            class="fan-carousel"
+            id="fanCarousel"
+            role="region"
+            aria-roledescription="carousel"
+            aria-label="Selected projects"
+          >
+            <!-- Fan stage: 4 stacked cards with 3D fan positions -->
+            <div class="fan-stage-wrapper">
+              <div class="fan-stage" id="fanStage">
+                <!-- Card 0: Ruhul OS -->
+                <div
+                  class="fan-card"
+                  data-fan-index="0"
+                  data-state="active"
+                  role="button"
+                  tabindex="0"
+                  aria-label="Show Ruhul OS project"
+                  aria-pressed="true"
+                >
+                  <div
+                    class="project-visual portfolio-visual"
+                    aria-hidden="true"
+                  >
+                    <div class="mini-window">
+                      <div class="mini-window-bar">
+                        <span></span><span></span><span></span>
+                      </div>
+                      <div class="mini-window-copy">
+                        <b>Stories with shape.</b>
+                        <span>Interfaces with purpose.</span>
+                      </div>
+                      <div class="mini-dock"><i></i><i></i><i></i><i></i></div>
                     </div>
-                    <div class="bubble-tail"></div>
+                    <img
+                      src="assets/images/folder-ui/folder-front.webp"
+                      alt=""
+                      loading="lazy"
+                      width="892"
+                      height="626"
+                    />
+                  </div>
                 </div>
+
+                <!-- Card 1: Prestasi Social System -->
+                <div
+                  class="fan-card"
+                  data-fan-index="1"
+                  data-state="right"
+                  role="button"
+                  tabindex="0"
+                  aria-label="Show Prestasi Social System project"
+                  aria-pressed="false"
+                >
+                  <div class="project-visual school-visual" aria-hidden="true">
+                    <div class="school-phone">
+                      <div class="school-status"><span>9:41</span><i></i></div>
+                      <div class="school-post post-yellow">
+                        <b>Learn</b><span>with curiosity</span>
+                      </div>
+                      <div class="school-post post-blue">
+                        <span>School stories</span><b>made clear.</b>
+                      </div>
+                      <div class="school-nav"><i></i><i></i><i></i></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2: Milenia Editorial Desk -->
+                <div
+                  class="fan-card"
+                  data-fan-index="2"
+                  data-state="hidden"
+                  role="button"
+                  tabindex="-1"
+                  aria-label="Show Milenia Editorial Desk project"
+                  aria-pressed="false"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="project-visual editorial-visual"
+                    aria-hidden="true"
+                  >
+                    <div class="editorial-sheet editorial-sheet-back"></div>
+                    <div class="editorial-sheet editorial-sheet-front">
+                      <span>THE DAILY FILE</span>
+                      <b>Stories need rhythm, not noise.</b>
+                      <div class="editorial-lines">
+                        <i></i><i></i><i></i><i></i>
+                      </div>
+                      <div class="audio-wave">
+                        <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 3: Illustration Playground -->
+                <div
+                  class="fan-card"
+                  data-fan-index="3"
+                  data-state="left"
+                  role="button"
+                  tabindex="0"
+                  aria-label="Show Illustration Playground project"
+                  aria-pressed="false"
+                >
+                  <div
+                    class="project-visual illustration-visual"
+                    aria-hidden="true"
+                  >
+                    <img
+                      src="assets/images/projects/photo-utama.webp"
+                      alt="Colorful character illustration by Ruhul Ikram"
+                      loading="lazy"
+                      width="1200"
+                      height="1200"
+                    />
+                    <span aria-hidden="true">Personal sketchbook</span>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <!-- Scroll indicator -->
-            <div class="scroll-indicator" id="scrollIndicator">
-                <span>Scroll</span>
-                <div class="scroll-line"></div>
-            </div>
-        </section>
+            <!-- Detail panel: project text content, populated by JS -->
+            <div class="fan-detail" id="fanDetail" aria-live="polite"></div>
 
-        <!-- ========== PROJECT SECTION ========== -->
-        <section id="project" class="content-section">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-icon">
-                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <rect x="2" y="3" width="20" height="14" rx="2" />
-                            <line x1="8" y1="21" x2="16" y2="21" />
-                            <line x1="12" y1="17" x2="12" y2="21" />
-                        </svg>
-                    </div>
-                    <h2>Selected <em>Projects</em></h2>
-                    <p class="section-sub">Beberapa karya yang telah saya kerjakan</p>
-                </div>
-                <div class="project-grid">
-                    <!-- TODO: Ganti dengan project kamu -->
-                    <article class="project-card" id="project-1">
-                        <div class="card-preview">
-                            <img src="assets/photo-utama.jpg" alt="Project 1">
-                            <div class="card-overlay">
-                                <span class="overlay-btn">Lihat Detail →</span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-tools">
-                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <polyline points="16 18 22 12 16 6" />
-                                    <polyline points="8 6 2 12 8 18" />
-                                </svg>
-                            </div>
-                            <h3>Nama Project 1</h3>
-                            <p>Deskripsi singkat tentang project ini dan teknologi yang digunakan.</p>
-                            <div class="card-tags">
-                                <span>HTML</span><span>CSS</span><span>JS</span>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="project-card" id="project-2">
-                        <div class="card-preview">
-                            <img src="assets/photo-utama.jpg" alt="Project 2">
-                            <div class="card-overlay">
-                                <span class="overlay-btn">Lihat Detail →</span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-tools">
-                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <polyline points="16 18 22 12 16 6" />
-                                    <polyline points="8 6 2 12 8 18" />
-                                </svg>
-                            </div>
-                            <h3>Nama Project 2</h3>
-                            <p>Deskripsi singkat tentang project kedua.</p>
-                            <div class="card-tags">
-                                <span>React</span><span>Node.js</span>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="project-card" id="project-3">
-                        <div class="card-preview">
-                            <img src="assets/photo-utama.jpg" alt="Project 3">
-                            <div class="card-overlay">
-                                <span class="overlay-btn">Lihat Detail →</span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-tools">
-                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <polyline points="16 18 22 12 16 6" />
-                                    <polyline points="8 6 2 12 8 18" />
-                                </svg>
-                            </div>
-                            <h3>Nama Project 3</h3>
-                            <p>Deskripsi singkat tentang project ketiga.</p>
-                            <div class="card-tags">
-                                <span>Figma</span><span>CSS</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
+            <!-- Bottom navigation: dot pills + arrow buttons -->
+            <div class="fan-nav">
+              <div
+                class="fan-dots"
+                id="fanDots"
+                role="group"
+                aria-label="Project navigation"
+              ></div>
+              <div class="fan-arrows">
+                <button
+                  class="fan-arrow"
+                  type="button"
+                  data-fan="prev"
+                  aria-label="Previous project"
+                >
+                  <svg aria-hidden="true" viewBox="0 0 24 24">
+                    <path d="m15 18-6-6 6-6" />
+                  </svg>
+                </button>
+                <button
+                  class="fan-arrow"
+                  type="button"
+                  data-fan="next"
+                  aria-label="Next project"
+                >
+                  <svg aria-hidden="true" viewBox="0 0 24 24">
+                    <path d="m9 18 6-6-6-6" />
+                  </svg>
+                </button>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- ========== WORK EXPERIENCE SECTION ========== -->
-        <section id="work" class="content-section section-dark">
-            <div class="container">
-                <div class="section-header light">
-                    <div class="section-icon">
-                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <rect x="2" y="7" width="20" height="14" rx="2" />
-                            <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
-                        </svg>
-                    </div>
-                    <h2>Work <em>Experience</em></h2>
-                    <p class="section-sub">Pengalaman kerja & skill yang dimiliki</p>
-                </div>
-                <div class="work-cards">
-                    <!-- TODO: Ganti dengan pengalaman kerja kamu -->
-                    <div class="work-card">
-                        <div class="work-card-header">
-                            <div class="work-badge">
-                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <circle cx="12" cy="12" r="10" />
-                                    <polyline points="12 6 12 12 16 14" />
-                                </svg>
-                            </div>
-                            <span class="work-period">2024 — Sekarang</span>
-                        </div>
-                        <h3>Web Developer</h3>
-                        <p class="work-company">Nama Perusahaan / Freelance</p>
-                        <p class="work-desc">Deskripsi singkat tentang peran dan tanggung jawab kamu di posisi ini.</p>
-                        <div class="work-skills">
-                            <span>HTML/CSS</span><span>JavaScript</span><span>React</span>
-                        </div>
-                    </div>
-                    <div class="work-card">
-                        <div class="work-card-header">
-                            <div class="work-badge">
-                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <circle cx="12" cy="12" r="10" />
-                                    <polyline points="12 6 12 12 16 14" />
-                                </svg>
-                            </div>
-                            <span class="work-period">2023 — 2024</span>
-                        </div>
-                        <h3>Frontend Intern</h3>
-                        <p class="work-company">Nama Perusahaan Lain</p>
-                        <p class="work-desc">Deskripsi singkat tentang apa yang dipelajari dan dikerjakan.</p>
-                        <div class="work-skills">
-                            <span>Vue.js</span><span>Git</span><span>Figma</span>
-                        </div>
-                    </div>
-                </div>
+      <section
+        class="notes-section chapter"
+        id="principles"
+        aria-labelledby="notes-title"
+      >
+        <div class="wide-container notes-shell">
+          <div class="notes-portrait" aria-hidden="true">
+            <div class="portrait-paper">
+              <img
+                src="assets/images/folder-ui/stamp.webp"
+                alt=""
+                loading="lazy"
+                width="262"
+                height="299"
+              />
+              <span>Think clearly.<br />Make carefully.</span>
             </div>
-        </section>
+            <div class="portrait-tape"></div>
+          </div>
 
-        <!-- ========== STUDIES SECTION ========== -->
-        <section id="studies" class="content-section">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-icon">
-                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
-                        </svg>
-                    </div>
-                    <h2>Education <em>& Studies</em></h2>
-                    <p class="section-sub">Riwayat pendidikan formal & non-formal</p>
+          <div class="notes-copy">
+            <h2 id="notes-title">How I keep the work moving.</h2>
+            <section
+              class="notes-carousel"
+              aria-roledescription="carousel"
+              aria-label="Working principles"
+            >
+              <div class="notes-viewport" aria-live="polite">
+                <article
+                  class="note-slide is-active"
+                  data-note
+                  aria-hidden="false"
+                >
+                  <p>Start with context, not components.</p>
+                  <span
+                    >I want to know who needs the work, what they should
+                    understand, and what should happen next before I choose a
+                    layout.</span
+                  >
+                </article>
+                <article class="note-slide" data-note aria-hidden="true">
+                  <p>Prototype where the idea will live.</p>
+                  <span
+                    >Whenever possible, I move into the browser early. Real
+                    type, real spacing, and real constraints make better design
+                    decisions.</span
+                  >
+                </article>
+                <article class="note-slide" data-note aria-hidden="true">
+                  <p>Leave the system tidier than I found it.</p>
+                  <span
+                    >A strong handoff is not only a polished screen. It is a
+                    clear file, reusable logic, and enough structure for the
+                    next person.</span
+                  >
+                </article>
+              </div>
+              <div class="notes-controls">
+                <span class="notes-count" id="notesCount">1 / 3</span>
+                <div>
+                  <button
+                    type="button"
+                    class="carousel-button"
+                    data-carousel="previous"
+                    aria-label="Previous working principle"
+                  >
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                      <path d="m15 18-6-6 6-6" />
+                    </svg>
+                  </button>
+                  <button
+                    type="button"
+                    class="carousel-button"
+                    data-carousel="next"
+                    aria-label="Next working principle"
+                  >
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                      <path d="m9 18 6-6-6-6" />
+                    </svg>
+                  </button>
                 </div>
-                <div class="studies-grid">
-                    <!-- TODO: Ganti dengan riwayat pendidikan kamu -->
-                    <div class="study-card">
-                        <div class="study-year">2022 — Sekarang</div>
-                        <div class="study-body">
-                            <div class="study-icon">🎓</div>
-                            <h3>Nama Universitas</h3>
-                            <p class="study-major">Teknik Informatika / Sistem Informasi</p>
-                            <p class="study-desc">Deskripsi singkat tentang fokus studi, mata kuliah favorit, atau
-                                prestasi.</p>
-                        </div>
-                    </div>
-                    <div class="study-card">
-                        <div class="study-year">2019 — 2022</div>
-                        <div class="study-body">
-                            <div class="study-icon">🏫</div>
-                            <h3>Nama SMA/SMK</h3>
-                            <p class="study-major">Jurusan / Program Keahlian</p>
-                            <p class="study-desc">Deskripsi singkat tentang pendidikan dan skill awal.</p>
-                        </div>
-                    </div>
-                    <div class="study-card online">
-                        <div class="study-year">2023 — Ongoing</div>
-                        <div class="study-body">
-                            <div class="study-icon">💻</div>
-                            <h3>Self-Learning & Courses</h3>
-                            <p class="study-major">Online Courses & Bootcamp</p>
-                            <p class="study-desc">Kursus online, bootcamp, atau sertifikasi yang telah diselesaikan.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- ========== CONTACT SECTION ========== -->
-        <section id="contact" class="content-section section-contact">
-            <div class="container">
-                <div class="contact-wrapper">
-                    <div class="contact-left">
-                        <h2>Let's <em>Connect</em></h2>
-                        <p>Tertarik bekerja sama atau ingin berdiskusi? Jangan ragu untuk menghubungi saya.</p>
-                    </div>
-                    <div class="contact-right">
-                        <a href="mailto:ikramruhul@gmail.com" class="contact-pill-link">
-                            <span class="pill-emoji">📧</span>
-                            <span>ikramruhul@gmail.com</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/ruhul-ikram/" target="_blank" class="contact-pill-link">
-                            <span class="pill-emoji">💼</span>
-                            <span>LinkedIn</span>
-                        </a>
-                        <a href="https://github.com/ruhulikram" target="_blank" class="contact-pill-link">
-                            <span class="pill-emoji">🐙</span>
-                            <span>GitHub</span>
-                        </a>
-                        <!-- TODO: Tambah sosmed lain -->
-                        <a href="#" target="_blank" class="contact-pill-link">
-                            <span class="pill-emoji">📸</span>
-                            <span>Instagram</span>
-                        </a>
-                    </div>
-                </div>
+      <section
+        class="contact-section chapter"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="wide-container contact-layout">
+          <div class="contact-heading">
+            <h2 id="contact-title">Have a folder worth opening?</h2>
+            <p>
+              Tell me what you are making, where it is stuck, and what a good
+              outcome looks like.
+            </p>
+          </div>
+
+          <div class="message-card">
+            <div class="message-topbar">
+              <span class="message-avatar" aria-hidden="true">RI</span>
+              <span
+                ><strong>Ruhul Ikram</strong
+                ><small>Usually replies by email</small></span
+              >
             </div>
-        </section>
+            <div class="message-thread">
+              <p>
+                Hi Ruhul, I have a project that needs a clear visual idea and a
+                thoughtful web build.
+              </p>
+              <span>Delivered</span>
+            </div>
+            <a
+              class="message-send"
+              href="mailto:ikramruhul@gmail.com?subject=New%20project%20inquiry"
+            >
+              Send the next message
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M12 19V5M6 11l6-6 6 6" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!-- ========== FOOTER ========== -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Ruhul Ikram. Built with ❤️</p>
+    <footer class="site-footer">
+      <div class="wide-container footer-grid">
+        <div>
+          <a class="footer-brand" href="#home">Ruhul Ikram</a>
+          <p>Design, development, and content from Bogor, Indonesia.</p>
         </div>
+        <nav class="footer-links" aria-label="Contact links">
+          <a href="mailto:ikramruhul@gmail.com">Email</a>
+          <a
+            href="https://www.linkedin.com/in/ruhul-ikram/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/ruhulikram"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a href="tel:+6285159333490">Phone</a>
+        </nav>
+        <p class="footer-credit">
+          &copy; <span id="currentYear">2026</span> Ruhul Ikram. Built with
+          intent.
+        </p>
+      </div>
     </footer>
 
-    <script src="js/main.js"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script src="js/main.js" defer></script>
+  </body>
 </html>

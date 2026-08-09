@@ -1,0 +1,9 @@
+# Private local notes
+more.txt
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+*.log
+style_dump.json
+
